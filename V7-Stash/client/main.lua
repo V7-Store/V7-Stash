@@ -29,7 +29,7 @@ AddEventHandler('onResourceStop', function(resourceName)
 end)
 
 Citizen.CreateThread(function()
-    if TriggerEvent("stash:v7:warn") == false then
+
     for k, v in pairs(Config.stash) do
         local model = `p_v_43_safe_s`
 
@@ -48,7 +48,7 @@ Citizen.CreateThread(function()
         SetEntityAsMissionEntity(obj)
 
     end
-  end
+
 end)
 
 function stash(key , data)
@@ -60,7 +60,6 @@ function stash(key , data)
 end
 
 Citizen.CreateThread(function()
-    if TriggerEvent("stash:v7:warn") == false then
     for k, v in pairs(Config.stash) do
         local label = v.label
         exports[Config.target]:AddBoxZone("v7:stash:name".. k, vector3(v.coords.x, v.coords.y, v.coords.z), 1, 1.0, {
@@ -107,5 +106,4 @@ Citizen.CreateThread(function()
                 distance = v.distance
           })
     end
- end
 end)
