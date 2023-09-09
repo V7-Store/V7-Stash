@@ -1,5 +1,7 @@
 # V7-Stash
 
+# discord Link : https://discord.gg/K5FVuHk86Y
+
 [ V7 Stash  | نظام الخزنات الواقعي]
 > تقدر تعدل كل شي فالخزنة من ناحية والكمية
 > 
